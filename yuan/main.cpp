@@ -9,20 +9,22 @@
 #include <iostream>
 using namespace std;
 const float PI=3.1415926;
-float fCir_L(float);
+float fCir_S(float);
 
 int main(int argc, const char * argv[])
 {
-    float r,l;
+    float r,s;
     std::cout<<"r=";
     std::cin>>r;
-    l=fCir_L(r);
-    std::cout<<"l="<<l;
+    s=fCir_S(r);
+    std::cout<<"\ns="<<s;
 }
-float fCir_L(float x)
+
+float fCir_S(float x)
 {
-    float z=0.0;
+    float z=-1.0;
     if(x>=0.0)
-        z=2*PI*x;
+        z=PI*x*x;
     return (z);
 }
+
