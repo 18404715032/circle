@@ -7,9 +7,22 @@
 //
 
 #include <iostream>
+using namespace std;
+const float PI=3.1415926;
+float fCir_L(float);
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, const char * argv[])
+{
+    float r,l;
+    std::cout<<"r=";
+    std::cin>>r;
+    l=fCir_L(r);
+    std::cout<<"l="<<l;
+}
+float fCir_L(float x)
+{
+    float z=0.0;
+    if(x>=0.0)
+        z=2*PI*x;
+    return (z);
 }
